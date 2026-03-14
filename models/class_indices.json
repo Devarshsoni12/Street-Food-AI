@@ -1,0 +1,19 @@
+{
+  "Aloo_Paratha": 0,
+  "Burger": 1,
+  "Chole_Bhature": 2,
+  "Dhokla": 3,
+  "Dosa": 4,
+  "Grilled_Sandwich": 5,
+  "Idli": 6,
+  "Medu_Vada": 7,
+  "Misal_Pav": 8,
+  "Momos": 9,
+  "Pakoda": 10,
+  "Pani_Puri": 11,
+  "Pav_Bhaji": 12,
+  "Poha": 13,
+  "Samosa": 14,
+  "Sev_Puri": 15,
+  "Vada_Pav": 16
+}

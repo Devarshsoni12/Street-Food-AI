@@ -1,0 +1,21 @@
+# Core Web Framework
+streamlit>=1.28.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+Pillow>=10.0.0
+
+# Machine Learning (Install separately if needed)
+tensorflow>=2.13.0
+
+# Image Processing
+opencv-python>=4.8.0
+
+# Visualization
+plotly>=5.17.0
+matplotlib>=3.7.0
+
+# Database & Security
+bcrypt>=4.0.0
+python-dotenv>=1.0.0

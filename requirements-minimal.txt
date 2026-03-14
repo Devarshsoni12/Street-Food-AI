@@ -1,0 +1,9 @@
+# Minimal requirements to run the app without ML
+streamlit
+numpy
+pandas
+Pillow
+plotly
+matplotlib
+bcrypt
+python-dotenv
