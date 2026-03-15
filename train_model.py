@@ -18,11 +18,11 @@ LR_FINE       = 1e-5
 
 CLASS_NAMES = [
     'Aloo Paratha', 'Burger', 'Chole Bhature', 'Dhokla', 'Dosa',
-    'Grilled Sandwich', 'Idli', 'Medul Vada', 'Misal Pav', 'Momos',
+    'Grilled Sandwich', 'Idli', 'Medu Vada', 'Misal Pav', 'Momos',
     'Pakoda', 'Pani Puri', 'Pav Bhaji', 'Poha', 'Samosa',
-    'Sev Puri', 'Vada Pav'
+    'Sev Puri', 'Vada Pav', 'Unknown'
 ]
-NUM_CLASSES = len(CLASS_NAMES)  # 17
+NUM_CLASSES = len(CLASS_NAMES)  # 18
 
 # ─── DATA GENERATORS ──────────────────────────────────────────────────────────
 train_datagen = ImageDataGenerator(

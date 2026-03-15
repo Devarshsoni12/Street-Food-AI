@@ -1,6 +1,6 @@
 -- Users Table
 CREATE TABLE IF NOT EXISTS users (
-    id SERIAL PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     username VARCHAR(50) UNIQUE NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
     password_hash VARCHAR(255) NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS users (
 
 -- User Profiles Table
 CREATE TABLE IF NOT EXISTS user_profiles (
-    id SERIAL PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER UNIQUE NOT NULL,
     age INTEGER,
     gender VARCHAR(10),
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS user_profiles (
 
 -- Food Items Table
 CREATE TABLE IF NOT EXISTS food_items (
-    id SERIAL PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     name VARCHAR(100) NOT NULL,
     category VARCHAR(50),
     meal_type VARCHAR(20),
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS food_items (
 
 -- Nutrition Information Table
 CREATE TABLE IF NOT EXISTS nutrition_info (
-    id SERIAL PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     food_item_id INTEGER NOT NULL,
     serving_size VARCHAR(50),
     serving_size_grams FLOAT,
@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS nutrition_info (
 
 -- Predictions History Table
 CREATE TABLE IF NOT EXISTS predictions (
-    id SERIAL PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER NOT NULL,
     food_item_id INTEGER,
     image_path VARCHAR(255),
@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS predictions (
 
 -- Daily Intake Tracking Table
 CREATE TABLE IF NOT EXISTS daily_intake (
-    id SERIAL PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER NOT NULL,
     prediction_id INTEGER NOT NULL,
     date DATE NOT NULL,
@@ -97,7 +97,7 @@ CREATE TABLE IF NOT EXISTS daily_intake (
 
 -- User Achievements Table
 CREATE TABLE IF NOT EXISTS achievements (
-    id SERIAL PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     name VARCHAR(100) NOT NULL,
     description TEXT,
     badge_icon VARCHAR(50),
@@ -107,7 +107,7 @@ CREATE TABLE IF NOT EXISTS achievements (
 
 -- User Achievements Junction Table
 CREATE TABLE IF NOT EXISTS user_achievements (
-    id SERIAL PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER NOT NULL,
     achievement_id INTEGER NOT NULL,
     earned_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS user_achievements (
 
 -- Food Recommendations Table
 CREATE TABLE IF NOT EXISTS recommendations (
-    id SERIAL PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     food_item_id INTEGER NOT NULL,
     recommended_food_id INTEGER NOT NULL,
     reason VARCHAR(255),
@@ -128,7 +128,7 @@ CREATE TABLE IF NOT EXISTS recommendations (
 
 -- User Feedback Table
 CREATE TABLE IF NOT EXISTS user_feedback (
-    id SERIAL PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER NOT NULL,
     prediction_id INTEGER,
     rating INTEGER,
@@ -140,7 +140,7 @@ CREATE TABLE IF NOT EXISTS user_feedback (
 
 -- Analytics Table
 CREATE TABLE IF NOT EXISTS analytics (
-    id SERIAL PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     event_type VARCHAR(50),
     user_id INTEGER,
     metadata TEXT,

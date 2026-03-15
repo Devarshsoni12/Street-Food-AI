@@ -30,7 +30,7 @@ st.divider()
 st.subheader("🍕 Supported Foods")
 foods = [
     "Aloo Paratha", "Burger", "Chole Bhature", "Dhokla", "Dosa",
-    "Grilled Sandwich", "Idli", "Medul Vada", "Misal Pav", "Momos",
+    "Grilled Sandwich", "Idli", "Medu Vada", "Misal Pav", "Momos",
     "Pakoda", "Pani Puri", "Pav Bhaji", "Poha", "Samosa",
     "Sev Puri", "Vada Pav"
 ]

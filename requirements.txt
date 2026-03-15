@@ -17,5 +17,6 @@ plotly>=5.17.0
 matplotlib>=3.7.0
 
 # Database & Security
+psycopg2-binary>=2.9.0
 bcrypt>=4.0.0
 python-dotenv>=1.0.0

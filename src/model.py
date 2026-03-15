@@ -6,12 +6,12 @@ import numpy as np
 
 CLASS_NAMES = [
     'Aloo Paratha', 'Burger', 'Chole Bhature', 'Dhokla', 'Dosa',
-    'Grilled Sandwich', 'Idli', 'Medul Vada', 'Misal Pav', 'Momos',
+    'Grilled Sandwich', 'Idli', 'Medu Vada', 'Misal Pav', 'Momos',
     'Pakoda', 'Pani Puri', 'Pav Bhaji', 'Poha', 'Samosa',
-    'Sev Puri', 'Vada Pav'
+    'Sev Puri', 'Vada Pav', 'Unknown'
 ]
 
-NUM_CLASSES = len(CLASS_NAMES)  # 17
+NUM_CLASSES = len(CLASS_NAMES)  # 18
 
 class FoodClassifier:
     def __init__(self, num_classes=NUM_CLASSES, input_shape=(224, 224, 3)):
@@ -99,7 +99,7 @@ class MealTypeClassifier:
             'Dosa':             ['breakfast', 'lunch'],
             'Grilled Sandwich': ['breakfast', 'snack'],
             'Idli':             ['breakfast'],
-            'Medul Vada':       ['breakfast', 'snack'],
+            'Medu Vada':       ['breakfast', 'snack'],
             'Misal Pav':        ['breakfast', 'lunch'],
             'Momos':            ['snack', 'lunch'],
             'Pakoda':           ['snack'],

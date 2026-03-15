@@ -94,7 +94,7 @@ def seed_foods():
                           'allergens': []}
         },
         {
-            'name': 'Medul Vada',
+            'name': 'Medu Vada',
             'category': 'street_food', 'meal_type': 'breakfast,snack',
             'region': 'south', 'is_vegetarian': True, 'is_vegan': True,
             'is_jain': False, 'spice_level': 3,
